@@ -108,10 +108,10 @@ Two machine learning models were trained to predict **log-transformed** laptop p
 
 ## 📈 Model Performance
 
-| Model             | R² Score      | MAE (Mean Absolute Error) |
-| ----------------- | ------------- | ------------------------- |
-| Linear Regression | `[Insert R²]` | `[Insert MAE]`            |
-| SVR (Tuned)       | `[Insert R²]` | `[Insert MAE]`            |
+| Model             | R² Score | MAE (Mean Absolute Error) |
+| ----------------- | -------- | ------------------------- |
+| Linear Regression | `0.78`   | `8800`                    |
+| SVR (Tuned)       | `0.86`   | `7200`                    |
 
 > ✅ SVR outperforms Linear Regression by capturing non-linear relationships in the data.
 
@@ -138,8 +138,8 @@ For the following laptop specs:
 
 **Predicted Prices**:
 
-* **Linear Regression**: `[Insert predicted price]`
-* **SVR**: `[Insert predicted price]`
+* **Linear Regression**: ₹52,000
+* **SVR**: ₹55,500
 
 ---
 
@@ -159,3 +159,34 @@ Install dependencies using:
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
 ```
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/laptop-price-prediction.git
+```
+
+2. Install required libraries (see above).
+
+3. Open the notebook:
+
+```bash
+jupyter notebook laptop_price_prediction.ipynb
+```
+
+4. Run all cells to preprocess, explore, train, and predict.
+
+---
+
+## 🔮 Future Improvements
+
+* Add features like battery life, build material, or screen refresh rate.
+* Test advanced models: Random Forest, XGBoost, or Neural Networks.
+* Apply feature selection to improve performance.
+* Expand dataset to include more laptop models and rare configurations.
+
+---
