@@ -103,7 +103,7 @@ Two machine learning models were trained to predict **log-transformed** laptop p
 
 ### 2. **Support Vector Regression (SVR)**
 
-* RBF kernel, tuned using `GridSearchCV` with KFold cross validation.
+* RBF kernel, tuned using `GridSearchCV` with cross validation.
 * Used `RobustScaler` for better handling of outliers.
 
 
