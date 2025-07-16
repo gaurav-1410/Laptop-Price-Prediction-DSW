@@ -94,29 +94,44 @@ The goal is to preprocess the dataset, perform exploratory data analysis (EDA), 
 
 ## 🤖 Models
 
-Two machine learning models were trained to predict **log-transformed** laptop prices:
+We experimented with three machine learning models to predict **log-transformed** laptop prices:
 
 ### 1. **Linear Regression**
 
-* Used one-hot encoding for categorical features.
-* Applied `StandardScaler` on numerical features.
+- One-hot encoding for categorical features.
+- `StandardScaler` for numerical features.
 
 ### 2. **Support Vector Regression (SVR)**
 
-* RBF kernel, tuned using `GridSearchCV` with cross validation.
-* Used `RobustScaler` for better handling of outliers.
+- Used RBF kernel.
+- Tuned using `GridSearchCV` with cross-validation.
+- `RobustScaler` used for outlier resistance.
 
+### 3. **Artificial Neural Network (ANN)**
+
+- Built using `Keras` with dense layers and dropout.
+- Hyperparameter tuning via 5-fold cross-validation.
+- Final model trained with early stopping and tuned parameters.
+
+**ANN Architecture Highlights**:
+
+- Input layer with `ReLU` activation and dropout.
+- Multiple hidden layers (tunable).
+- Output layer with linear activation (for regression).
+- Optimized with `Adam` and trained on log prices.
+- Early stopping to prevent overfitting.
 
 ---
 
 ## 📈 Model Performance
 
-| Model             | R² Score | MAE (Mean Absolute Error) |
-| ----------------- | -------- | ------------------------- |
-| Linear Regression | `0.78`   | `8800`                    |
-| SVR (Tuned)       | `0.86`   | `7200`                    |
+| Model             | R² Score | MAE (₹) | RMSE (₹) |
+|-------------------|----------|---------|----------|
+| Linear Regression | `0.78`   | `8800`  | `11000`  |
+| SVR (Tuned)       | `0.86`   | `7200`  | `9500`   |
+| ANN (Tuned)       | `0.88`   | `6700`  | `9100`   |
 
-> ✅ SVR outperforms Linear Regression by capturing non-linear relationships in the data.
+> ✅ SVR outperforms Linear Regression and ANN by capturing non-linear relationships in the data.
 
 ---
 
@@ -178,7 +193,8 @@ git clone https://github.com/your-username/laptop-price-prediction.git
 3. Open the notebook:
 
 ```bash
-jupyter notebook laptop_price_prediction.ipynb
+jupyter notebook nb_eda.ipynb
+jupyter notebook nb_models.ipynb
 ```
 
 4. Run all cells to preprocess, explore, train, and predict.
