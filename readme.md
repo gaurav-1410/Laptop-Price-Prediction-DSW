@@ -27,8 +27,8 @@ This project focuses on predicting laptop prices in Indian Rupees (₹) based on
 
 The goal is to preprocess the dataset, perform exploratory data analysis (EDA), and build machine learning models to predict laptop prices accurately.
 
-## ❓Why we have worked with this columns only?
-During my time (Gaurav Pandey) working as a laptop salesperson at Vijay Sales (a well-known electronics retail store in India), I observed that when customers walk in to purchase a laptop, their primary considerations typically include the brand, RAM, storage, operating system, weight, and laptop series. However, for customers with specific needs—such as gamers, coders, video editors, or graphic designers—the decision-making process becomes more detailed. These customers often inquire about additional specifications like the graphics processor, graphics memory, pixel density, RAM type, processor brand, and display size.
+## ❓Why we worked with these columns only?
+During a project member's work role as a salesperson at a well-known electronics retail store in India, they observed that when customers walk in to purchase a laptop, their primary considerations typically included the brand, RAM, storage, operating system, weight, and laptop series. However, for customers with specific needs such as gamers, coders, video editors, or graphic designers, the decision-making process becomes more detailed. These customers often inquire about additional specifications like the graphics processor, graphics memory, pixel density, RAM type, processor brand, and display size.
 
 <img width="643" height="418" alt="image" src="https://github.com/user-attachments/assets/9320e335-77cb-48fe-8021-a5c422404d73" />
 
