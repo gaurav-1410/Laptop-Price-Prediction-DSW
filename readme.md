@@ -20,6 +20,8 @@ This project focuses on predicting laptop prices in Indian Rupees (₹) based on
 
 The goal is to preprocess the dataset, perform exploratory data analysis (EDA), and build machine learning models to predict laptop prices accurately.
 
+<img width="643" height="418" alt="image" src="https://github.com/user-attachments/assets/9320e335-77cb-48fe-8021-a5c422404d73" />
+
 ---
 
 ## 📂 Dataset
@@ -101,8 +103,9 @@ Two machine learning models were trained to predict **log-transformed** laptop p
 
 ### 2. **Support Vector Regression (SVR)**
 
-* RBF kernel, tuned using `GridSearchCV`.
+* RBF kernel, tuned using `GridSearchCV` with KFold cross validation.
 * Used `RobustScaler` for better handling of outliers.
+
 
 ---
 
@@ -190,5 +193,3 @@ jupyter notebook laptop_price_prediction.ipynb
 * Expand dataset to include more laptop models and rare configurations.
 
 ---
-<img width="643" height="418" alt="image" src="https://github.com/user-attachments/assets/9320e335-77cb-48fe-8021-a5c422404d73" />
-
