@@ -1,1 +1,5 @@
 .venv
+env
+.qodo
+_pycache
+__pycache__
