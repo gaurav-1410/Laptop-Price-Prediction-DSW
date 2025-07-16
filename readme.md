@@ -16,7 +16,8 @@ This project focuses on predicting laptop prices in Indian Rupees (₹) based on
 * RAM Type
 * SSD Capacity
 * Operating system
-* Processor brand & series
+* Processor brand
+* Processor series
 
 The goal is to preprocess the dataset, perform exploratory data analysis (EDA), and build machine learning models to predict laptop prices accurately.
 
@@ -154,18 +155,14 @@ For the following laptop specs:
 * Processor Series: **i3**
 * Graphics Memory: **0 GB**
 
-**Predicted Prices**:
-
-* **Linear Regression**: ₹52,000
-* **SVR**: ₹55,500
-
 ---
 
 ## 📁 Files
 
 * `laptop_dataset.csv`: Original dataset
 * `processed_laptop_data.csv`: Cleaned dataset
-* `laptop_price_prediction.ipynb`: Jupyter notebook for preprocessing, EDA, and modeling
+* `nb_eda.ipynb`: Jupyter notebook for preprocessing and EDA
+* `nb_models.ipynb`: Modeling
 * `README.md`: Project documentation
 
 ---
@@ -175,7 +172,7 @@ For the following laptop specs:
 Install dependencies using:
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn
+pip install pandas numpy matplotlib seaborn scikit-learn tensorflow
 ```
 
 ---
