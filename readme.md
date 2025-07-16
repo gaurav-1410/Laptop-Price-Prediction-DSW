@@ -190,3 +190,5 @@ jupyter notebook laptop_price_prediction.ipynb
 * Expand dataset to include more laptop models and rare configurations.
 
 ---
+<img width="643" height="418" alt="image" src="https://github.com/user-attachments/assets/9320e335-77cb-48fe-8021-a5c422404d73" />
+
