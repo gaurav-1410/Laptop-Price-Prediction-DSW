@@ -167,7 +167,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 1. Clone the repository:
 
 ```bash
-git clone [https://github.com/your-username/laptop-price-prediction.git](https://github.com/gaurav-1410/Laptop-Price-Prediction-DSW.git)
+git clone https://github.com/your-username/laptop-price-prediction.git
 ```
 
 2. Install required libraries (see above).
